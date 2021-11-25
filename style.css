@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100&family=Poppins:wght@100&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +16,11 @@ body {
 header {
   background: #3c3a39;
   margin: 0;
+  position: absolute;
+  width: 375px;
+  height: 92px;
+  left: 0;
+  top: 0;
 }
 
 .pure-nav-list {
@@ -37,7 +46,7 @@ a {
   width: 35px;
   height: 3px;
   color: #fff;
-  background-color: #acb7c3;
+  background-color: #fff;
   margin-top: 7px;
   margin-right: 10px;
 }
@@ -65,7 +74,7 @@ div li {
 .mv-nav-list h4 {
   color: #fff;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Crete Round', serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -75,7 +84,16 @@ div li {
 }
 
 .section-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
   background-color: #1c1a19;
+  position: absolute;
+  width: 375px;
+  height: 590px;
+  left: 0;
+  top: 92px;
 }
 
 .mv-section-headline {
@@ -86,29 +104,23 @@ div li {
   background-size: cover;
 }
 
-section .mv-main-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 120px 24px;
-  position: absolute;
-  width: 375px;
-  height: 590px;
-  bottom: 270px;
-}
-
 .Developer h1 {
-  color: #ff6b00;
-  font-family: Crete Round, Arial, Helvetica, sans-serif;
-  font-size: 58px;
+  position: static;
+  width: 327px;
+  height: 124px;
+  left: 24px;
+  top: 120px;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 56px;
   line-height: 64px;
-  letter-spacing: 0.3700000047683716px;
-  text-align: left;
-  margin-left: 10px;
-  margin-top: 0;
-  padding-top: 60px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
 }
 
 .Developer h3 {
@@ -129,7 +141,6 @@ section .mv-main-text {
   order: 1;
   flex-grow: 0;
   margin: 12px 0;
-  margin-left: 10px;
 }
 
 .Developer p {
@@ -138,16 +149,16 @@ section .mv-main-text {
   height: 123px;
   left: 24px;
   top: 295px;
-  font-family: Poppins Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
+  flex: none;
   order: 2;
   flex-grow: 0;
   margin: 12px 0;
-  margin-left: 10px;
 }
 
 .mv-social-media i {
@@ -157,6 +168,9 @@ section .mv-main-text {
 
 .mv-social-media {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
 }
 
 .project-list-1 a {
@@ -182,6 +196,8 @@ section .mv-main-text {
 
 .mv-social-media-icons {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 52%;
   justify-content: space-between;
 }
