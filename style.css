@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0;
+  background: #3c3a39;
+}
+
+.for-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: none;
+}
+
+.menu-bar {
+  justify-content: end;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  width: 35px;
+  height: 3px;
+  color: #fff;
+  background-color: #acb7c3;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
