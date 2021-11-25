@@ -185,3 +185,24 @@ section .mv-main-text {
   width: 52%;
   justify-content: space-between;
 }
+
+/* Hero image */
+section .hero-image {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  width: 375px;
+  height: 6968px;
+}
+
+section .hero-image img {
+  position: absolute;
+  left: 65.74%;
+  right: -30.09%;
+  top: 60.3%;
+  bottom: -11.63%;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  transform: rotate(-6deg);
+}
