@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio-setup
-# Build a portfolio setup and mobile version skeleton
+# Portfolio-setup-mobile
+# Build a portfolio setup and mobile version
 
 ## Description
-> My portfolio project.
+> My portfolio project with my works section.
 
 ## Built With
 
-- html
-- css
+- HTML
+- CSS
 
 ## Procedure to clone project
 - open your terminal
@@ -18,7 +18,7 @@
 - Run the project in you browser 
 - Inspect it to check the look in mobile format.
 
-![screenshot](images/img-microverse.png)
+![screenshot](images/fullshot.png)
 
 ## Author
 
