@@ -112,3 +112,125 @@ order: 3;
 flex-grow: 0;
 margin: 36px 24px;
 
+}
+
+.works h4 {
+  color: #1c1a19;
+  height: 83px;
+  margin: 24px 9px;
+  margin-top: 73px;
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Crete Round', serif;
+  margin-left: 24px;
+}
+
+.pictures {
+  background: no-repeat url("images/gym-fit.png") 100% 10%;
+  position: static;
+  height: 237px;
+  display: grid;
+  left: 24px;
+  top: 1px;
+  margin: 24px 1px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gym-fit {
+  height: 53px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.solid {
+  border-top: 2px solid rgb(187, 187, 187);
+}
+
+#post {
+  font-weight: 400;
+  font-size: 32px;
+  height: 36px;
+  margin-left: 10px;
+  align-items: center;
+  line-height: 44px;
+  margin-top: 24px;
+  font-family: 'Crete Round', serif;
+  color: #091e42;
+  margin-left: 24px;
+}
+
+.post-text {
+  color: #091e42;
+  font-size: 16px;
+  font-weight: normal;
+  height: 147px;
+  margin: 5px 12px;
+  margin-top: -18px;
+  top: 48px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  margin-left: 24px;
+}
+/* Grid CSS */
+.grid-container {
+  margin: 14px;
+  display: flex;
+  align-items: center;
+  }
+
+.grid {
+  margin-left: -53px;
+  display: flex;
+  align-items: center;
+}
+.grid-css {
+  display: flex;
+  height: 28px;
+  border: 1px solid black;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;
+  margin: 7px 24px;
+}
+
+.grid-item {
+  display: flex;
+  height: 28px;
+  border: 1px solid black;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;
+  margin: 7px 11px;
+}
+
+/* Button CSS */
+
+#button {
+  color: #fff;
+  padding: 24px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 4px;
+  height: 24px;
+  top: 12px;
+  margin-left: 24px;
+  margin-bottom: -42px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+
+#button:enabled {
+  background: #ff6c03;
+}
+
+
+button:enabled {
+  background: #f55800;
+}
+
