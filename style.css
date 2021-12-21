@@ -48,8 +48,6 @@ div a {
   margin: 10px 24px 24px 24px;
 }
 
-
-
 header {
   background: #3c3a39;
   margin: 0;
@@ -134,7 +132,6 @@ section .mv-main-text {
   font-weight: normal;
   padding-left: 5px;
   line-height: 64px;
-  /* letter-spacing: 0.3700000047683716px; */
   text-align: left;
   margin-left: 10px;
   margin-top: 0;
