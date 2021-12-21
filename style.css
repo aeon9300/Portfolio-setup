@@ -48,6 +48,16 @@ div a {
   margin: 10px 24px 24px 24px;
 }
 
+.navblock .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  color: #67798E;
+  margin-left: 50px;
+  border: none;
+ }
+
 header {
   background: #3c3a39;
   margin: 0;
