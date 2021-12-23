@@ -393,3 +393,10 @@ projectDeskArr[6].onclick = function popUpWindowDesk5() {
 projectDeskArr[7].onclick = function popUpWindowDesk6() {
   popUpmenuDesk.style.display = 'block';
 };
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 902) {
+    document.querySelector('.popupclass').style.display = 'none';
+    document.querySelector('.popupBlocDesktop').style.width = '100%';
+  }
+});
