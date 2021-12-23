@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+html {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -189,6 +197,174 @@ section .mv-main-text {
 
 .recent {
   padding-left: 6%;
+}
+
+
+.popupBlocDesktop {
+  display: none;
+}
+
+.popupclass {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 12%;
+  padding-bottom: 221px;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.note {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 4%;
+  padding-right: 4%;
+  top: 1px;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 44px;
+  background-color: #fff;
+}
+
+.poptesty {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding-right: 2%;
+  flex-direction: row;
+}
+
+.poptitleclass {
+  flex: 1;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.closeiconclass {
+  flex: 1;
+  max-width: 3%;
+}
+
+.listing {
+  flex: 1;
+  padding-left: 1%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 29px;
+}
+
+.bambam {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.6em;
+  width: 16%;
+  height: 100%;
+  border: 1px solid #979493;
+  text-align: center;
+  margin-right: 4%;
+}
+
+.banban {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.6em;
+  border: 1px solid #979493;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  margin-right: 4%;
+}
+
+.lome {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.6em;
+  text-align: center;
+  width: 35%;
+  height: 100%;
+  border: 1px solid #979493;
+}
+
+.imagetxtclass {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.lorem {
+  flex: 1;
+  max-width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  color: #344563;
+}
+
+.create {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.orang {
+  flex: 1;
+  font-size: 0.8125em;
+  color: #fff;
+  align-items: center;
+  background: #ff6b00;
+  max-width: 40%;
+  height: 48px;
+  border: none;
+}
+
+.loader {
+  width: 18px;
+  height: 20px;
+  margin-left: 6%;
+}
+
+.patten {
+  flex: 1;
+  padding: 12px;
+  background: #ff6b00;
+  color: #fff;
+  max-width: 55%;
+  margin-left: 3%;
+  align-items: center;
+  font-size: 0.8125em;
+  border: none;
+  height: 48px;
+}
+
+.transfer {
+  margin-left: 4%;
 }
 
 .mv-social-media i {
@@ -860,6 +1036,162 @@ section .mv-main-text {
   }
 
   .horizontal-line-4 {
+    display: none;
+  }
+
+  .popupBlocDesktop {
+    display: none;
+    overflow: auto;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    max-width: 100%;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .blockDesktop {
+    display: flex;
+    max-width: 80%;
+    min-height: 631px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.076%;
+    background-color: #fff;
+    padding-bottom: 7%;
+    padding-right: 2.076%;
+  }
+
+  .textImageclas {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+  }
+
+  .textTitleDeskclas {
+    flex: 1;
+    font-family: Crete Round, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 44px;
+  }
+
+  .closePopupclas {
+    flex: 1;
+    max-width: 2%;
+  }
+
+  .listDesktop {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+  }
+
+  .itemDesktop {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8125em;
+    padding: 1% 1% 2% 1%;
+    line-height: 16px;
+    outline: 1px solid black;
+    margin-right: 1%;
+    text-align: center;
+    height: 19%;
+  }
+
+  .listOneDesk {
+    max-width: 5%;
+  }
+
+  .listwoDesk {
+    max-width: 10%;
+  }
+
+  .listhreeDesk {
+    max-width: 15%;
+  }
+
+  .desktopimageclas {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pictureScreenclass {
+    flex: 1;
+    max-width: 60%;
+    margin-right: 25px;
+  }
+
+  .textsBlockDeskclas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .buttonDesktopclas {
+    flex: 1;
+    display: flex;
+    max-width: 100%;
+  }
+
+  .buttonOneDeskclas {
+    flex: 1;
+    height: 48px;
+    max-width: 130px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border: none;
+  }
+
+  .imageDesktopbtn {
+    margin-left: 15%;
+  }
+
+  .buttonTwoDeskclas {
+    flex: 1;
+    height: 48px;
+    max-width: 149px;
+    margin-left: 3%;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border: none;
+  }
+
+  .imageDeskbutton {
+    margin-left: 9%;
+  }
+
+  .popupclass {
     display: none;
   }
 }
