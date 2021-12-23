@@ -108,7 +108,7 @@ buttonone.className = 'orang';
 buttonblock.appendChild(buttonone);
 
 const icon = document.createElement('img');
-icon.src = 'image/icon-see.svg';
+icon.src = 'image/icon-see.png';
 icon.id = 'load';
 icon.className = 'loader';
 buttonone.appendChild(icon);
