@@ -327,11 +327,11 @@ arrayDesktopButton.push(buttonOneDesk);
 arrayDesktopButton.push(buttonTwoDesk);
 
 arrayDesktopButton[0].onclick = function redirectionLive() {
-  window.location.href = 'https://oluwajuwon8.github.io/Portfolio-Project/';
+  window.location.href = 'https://aeon9300.github.io/Portfolio-setup/';
 };
 
 arrayDesktopButton[1].onclick = function redirection() {
-  window.location.href = 'https://github.com/oluwajuwon8/Portfolio-Project';
+  window.location.href = 'https://github.com/aeon9300/Portfolio-setup';
 };
 
 const textArrDesktop = [];
