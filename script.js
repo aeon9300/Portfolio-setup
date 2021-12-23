@@ -144,11 +144,11 @@ ButtonArr.push(buttonone);
 ButtonArr.push(btn);
 
 ButtonArr[0].onclick = function redirecting() {
-  window.location.href = 'https://oluwajuwon8.github.io/Portfolio-Project/';
+  window.location.href = 'https://aeon9300.github.io/Portfolio-setup/';
 };
 
 ButtonArr[1].onclick = function redirect() {
-  window.location.href = 'https://github.com/oluwajuwon8/Portfolio-Project';
+  window.location.href = 'https://github.com/aeon9300/Portfolio-setup';
 };
 
 const textArray = [];
