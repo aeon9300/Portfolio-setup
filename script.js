@@ -358,7 +358,7 @@ popUpSecondArrDesk.push(buttonimgsecDesk);
 const arrayButtonDesk = [];
 arrayButtonDesk.push(buttonFirstDesk);
 arrayButtonDesk.push(buttonSecondDesk);
-
+// My contact
 arrayButtonDesk[0].onclick = function redirectionLive() {
   window.location.href = 'https://aeon9300.github.io/Portfolio-setup/';
 };
