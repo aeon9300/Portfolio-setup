@@ -1,402 +1,379 @@
 const hamburgerMenu = document.getElementById('hamNenu');
 hamburgerMenu.addEventListener('click', () => {
-  document.getElementById('side-bar').style.width = '100%';
+  document.getElementById('navMenu').style.width = '100%';
 });
 
 const closeNavBlock = document.getElementById('closeNav');
 closeNavBlock.addEventListener('click', () => {
-  document.getElementById('side-bar').style.display = 'none';
-  window.location.reload();
+  document.getElementById('navMenu').style.display = 'none';
 });
 
 const openNavlink = document.getElementById('portfolio');
 openNavlink.addEventListener('click', () => {
-  document.getElementById('side-bar').style.display = 'none';
+  document.getElementById('navMenu').style.display = 'none';
   window.location.reload();
 });
 
 const openlinkAbout = document.getElementById('about');
 openlinkAbout.addEventListener('click', () => {
-  document.getElementById('side-bar').style.display = 'none';
+  document.getElementById('navMenu').style.display = 'none';
   window.location.reload();
 });
 
 const openlinkContact = document.getElementById('contact');
 openlinkContact.addEventListener('click', () => {
-  document.getElementById('side-bar').style.display = 'none';
+  document.getElementById('navMenu').style.display = 'none';
   window.location.reload();
 });
 
-//  popup window mobile//
+const mainPopupBlock = document.createElement('div');
+mainPopupBlock.id = 'mainpopupDiv';
+mainPopupBlock.className = 'mainpopupBloc';
 
-const popUpblack = document.createElement('div');
-popUpblack.id = 'popupid';
-popUpblack.className = 'popupclass';
-document.body.appendChild(popUpblack);
+const popupBlock = document.createElement('div');
+popupBlock.id = 'popupDiv';
+popupBlock.className = 'popupBloc';
 
-const popUp = document.createElement('div');
-popUp.id = 'content';
-popUp.className = 'note';
-popUpblack.appendChild(popUp);
+const closepopupBlock = document.createElement('div');
+closepopupBlock.id = 'closepopupDiv';
+closepopupBlock.className = 'closepopupBloc';
+popupBlock.appendChild(closepopupBlock);
 
-const popTextdiv = document.createElement('div');
-popTextdiv.id = 'poptest';
-popTextdiv.className = 'poptesty';
-popUp.appendChild(popTextdiv);
+const title = document.createElement('h3');
+title.id = 'titlePop';
+title.className = 'titlepop';
+title.textContent = 'Multi Post Stories';
+closepopupBlock.appendChild(title);
 
-const popupTitle = document.createElement('h3');
-popupTitle.textContent = 'Multi Post Stories';
-popupTitle.id = 'popuptitleid';
-popupTitle.className = 'poptitleclass';
-popTextdiv.appendChild(popupTitle);
+const closeTitle = document.createElement('img');
+closeTitle.id = 'closetitlePop';
+closeTitle.className = 'closetitlepop';
+closeTitle.src = 'Pictures/close.svg';
+closepopupBlock.appendChild(closeTitle);
 
-const closeicon = document.createElement('img');
-closeicon.src = 'image/close.svg';
-closeicon.id = 'closeiconid';
-closeicon.className = 'closeiconclass';
-popTextdiv.appendChild(closeicon);
+const unorderedlist = document.createElement('ul');
+unorderedlist.id = 'listlang';
+unorderedlist.className = 'langlist';
+popupBlock.appendChild(unorderedlist);
 
-const imageTextblock = document.createElement('div');
-imageTextblock.id = 'imagetxtid';
-imageTextblock.className = 'imagetxtclass';
-popUp.appendChild(imageTextblock);
+const listitem = document.createElement('li');
+listitem.className = 'listitem1 listht';
+listitem.textContent = 'html';
+unorderedlist.appendChild(listitem);
 
-const list = document.createElement('ul');
-list.id = 'listing';
-list.className = 'listing';
-imageTextblock.appendChild(list);
+const listitem1 = document.createElement('li');
+listitem1.className = 'listitem1 listbo';
+listitem1.textContent = 'Bootstrap';
+unorderedlist.appendChild(listitem1);
 
-const listchild1 = document.createElement('li');
-listchild1.textContent = 'html';
-listchild1.id = 'bam';
-listchild1.className = 'bambam';
-list.appendChild(listchild1);
+const listitem2 = document.createElement('li');
+listitem2.className = 'listitem1 listru';
+listitem2.textContent = 'Ruby on rails';
+unorderedlist.appendChild(listitem2);
 
-const listchild2 = document.createElement('li');
-listchild2.textContent = 'bootstrap';
-listchild2.id = 'blam';
-listchild2.className = 'banban';
-list.appendChild(listchild2);
+const popupimgtextBlock = document.createElement('div');
+popupimgtextBlock.id = 'popuptextDiv';
+popupimgtextBlock.className = 'popuptextBloc';
+popupBlock.appendChild(popupimgtextBlock);
 
-const listchild3 = document.createElement('li');
-listchild3.textContent = 'Ruby on rails';
-listchild3.id = 'lone';
-listchild3.className = 'lome';
-list.appendChild(listchild3);
+const popPicture = document.createElement('img');
+popPicture.className = 'imagePopup';
+popPicture.src = 'Pictures/popup-pic.png';
+popupimgtextBlock.appendChild(popPicture);
 
-const image = document.createElement('img');
-image.src = 'image/mobile-plain.png';
-image.id = 'placement';
-image.className = 'placemenImage';
-imageTextblock.appendChild(image);
+const popupimgtext = document.createElement('div');
+popupimgtext.id = 'popuptextdi';
+popupimgtext.className = 'popuptextBl';
+popupimgtextBlock.appendChild(popupimgtext);
 
-const popupText = document.createElement('p');
-popupText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-popupText.id = 'ipsum';
-popupText.className = 'lorem';
-imageTextblock.appendChild(popupText);
+const popUpText = document.createElement('p');
+popUpText.className = 'textPopup';
+popUpText.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+popupimgtext.appendChild(popUpText);
 
-const buttonblock = document.createElement('div');
-buttonblock.id = 'blank';
-buttonblock.className = 'create';
-popUp.appendChild(buttonblock);
+const buttonBlock = document.createElement('div');
+buttonBlock.id = 'buttonDiv';
+buttonBlock.className = 'buttonBlocicon';
+popupimgtext.appendChild(buttonBlock);
 
-const buttonone = document.createElement('button');
-buttonone.textContent = 'See Live';
-buttonone.id = 'orange';
-buttonone.className = 'orang';
-buttonblock.appendChild(buttonone);
+const buttonFirst = document.createElement('button');
+buttonFirst.id = 'buttonPop';
+buttonFirst.className = 'buttonpop';
+buttonFirst.textContent = 'See Live';
+buttonBlock.appendChild(buttonFirst);
 
-const icon = document.createElement('img');
-icon.src = 'image/icon-see.svg';
-icon.id = 'load';
-icon.className = 'loader';
-buttonone.appendChild(icon);
+const buttonimg = document.createElement('img');
+buttonimg.id = 'buttonPopimg';
+buttonimg.className = 'buttonpopimg';
+buttonimg.src = 'Pictures/arrow.svg';
+buttonFirst.appendChild(buttonimg);
 
-const btn = document.createElement('button');
-btn.textContent = 'see source';
-btn.id = 'path';
-btn.className = 'patten';
-buttonblock.appendChild(btn);
+const buttonSecond = document.createElement('button');
+buttonSecond.id = 'buttonPopsecond';
+buttonSecond.className = 'buttonpopsecond';
+buttonSecond.src = 'Pictures/popup-pic.png';
+buttonSecond.textContent = 'See Source';
+buttonBlock.appendChild(buttonSecond);
 
-const icons = document.createElement('img');
-icons.src = 'image/second-icon.png';
-icons.id = 'network';
-icons.className = 'transfer';
-btn.appendChild(icons);
+const buttonimgsec = document.createElement('img');
+buttonimgsec.src = 'Pictures/githubpopup.svg';
+buttonimgsec.id = 'buttonPopsecondimg';
+buttonimgsec.className = 'buttonpopsecondimg';
+buttonSecond.appendChild(buttonimgsec);
 
-const popUpWindowArray = [];
-popUpWindowArray.push(popUpblack);
-popUpWindowArray.push(popUp);
-popUpWindowArray.push(popTextdiv);
-popUpWindowArray.push(imageTextblock);
-popUpWindowArray.push(list);
-popUpWindowArray.push(buttonblock);
+document.body.appendChild(mainPopupBlock);
+mainPopupBlock.appendChild(popupBlock);
 
-const popUpImageArr = [];
-popUpImageArr.push(closeicon);
-popUpImageArr.push(image);
-popUpImageArr.push(icon);
-popUpImageArr.push(icons);
+const popUpArray = [];
+popUpArray.push(mainPopupBlock);
+popUpArray.push(popupBlock);
+popUpArray.push(closepopupBlock);
+popUpArray.push(title);
+popUpArray.push(closeTitle);
+popUpArray.push(unorderedlist);
+popUpArray.push(listitem);
+popUpArray.push(listitem1);
+popUpArray.push(listitem2);
+popUpArray.push(popupimgtextBlock);
+popUpArray.push(popupimgtext);
 
-const ButtonArr = [];
-ButtonArr.push(buttonone);
-ButtonArr.push(btn);
+const popUpSecondArr = [];
+popUpSecondArr.push(popPicture);
+popUpSecondArr.push(buttonimg);
+popUpSecondArr.push(buttonimgsec);
 
-ButtonArr[0].onclick = function redirecting() {
+const arrayButton = [];
+arrayButton.push(buttonBlock);
+arrayButton.push(buttonFirst);
+arrayButton.push(buttonSecond);
+
+arrayButton[1].onclick = function redirectionMobile() {
   window.location.href = 'https://aeon9300.github.io/Portfolio-setup/';
 };
 
-ButtonArr[1].onclick = function redirect() {
+arrayButton[2].onclick = function redirectionMobile() {
   window.location.href = 'https://github.com/aeon9300/Portfolio-setup';
 };
 
-const textArray = [];
-textArray.push(popupTitle);
-textArray.push(popupText);
+const textArr = [];
+textArr.push(popUpText);
 
-const popUpWindowObject = {};
-popUpWindowObject.htmlelement = popUpWindowArray;
-popUpWindowObject.images = popUpImageArr;
-popUpWindowObject.button = ButtonArr;
-popUpWindowObject.Text = textArray;
+const popUpObject = {};
+popUpObject.htmlelement = popUpArray;
+popUpObject.images = popUpSecondArr;
+popUpObject.button = arrayButton;
+popUpObject.Text = textArr;
 
-const popUpmenu = document.getElementById('popupid');
-const buttonTag = document.getElementById('projects1');
-const projectLink1 = document.getElementById('projects2');
-const projectLink2 = document.getElementById('projects3');
-const projectLink3 = document.getElementById('projects4');
-const projectLink4 = document.getElementById('projects5');
-const projectLink5 = document.getElementById('projects6');
-const projectLink6 = document.getElementById('projects7');
+const popUpmenu = document.getElementById('mainpopupDiv');
+const buttonTag = document.getElementById('projectpop');
+const cardLink1 = document.getElementById('blockn6');
+const cardLink2 = document.getElementById('blockn5');
+const cardLink3 = document.getElementById('blockn4');
+const cardLink4 = document.getElementById('blockn3');
+const cardLink5 = document.getElementById('blockn2');
+const cardLink6 = document.getElementById('blockn1');
 
-const projectArr = [];
-projectArr.push(popUpmenu);
-projectArr.push(buttonTag);
-projectArr.push(projectLink1);
-projectArr.push(projectLink2);
-projectArr.push(projectLink3);
-projectArr.push(projectLink4);
-projectArr.push(projectLink5);
-projectArr.push(projectLink6);
+const constArr = [];
+constArr.push(popUpmenu);
+constArr.push(buttonTag);
+constArr.push(cardLink1);
+constArr.push(cardLink2);
+constArr.push(cardLink3);
+constArr.push(cardLink4);
+constArr.push(cardLink5);
+constArr.push(cardLink6);
 
-document.querySelector('#closeiconid').addEventListener('click', () => {
-  document.querySelector('.popupclass').style.display = 'none';
+document.querySelector('#closetitlePop').addEventListener('click', () => {
+  document.querySelector('.mainpopupBloc').style.display = 'none';
 });
 
-projectArr[1].onclick = function popUpWindow() {
+constArr[1].onclick = function popUpAppear() {
   popUpmenu.style.display = 'block';
 };
 
-projectArr[2].onclick = function popUpWindow1() {
+constArr[2].onclick = function popUpAppearbl1() {
   popUpmenu.style.display = 'block';
 };
 
-projectArr[3].onclick = function popUpWindow2() {
+constArr[3].onclick = function popUpAppearbl2() {
   popUpmenu.style.display = 'block';
 };
 
-projectArr[4].onclick = function popUpWindow3() {
+constArr[4].onclick = function popUpAppearbl3() {
   popUpmenu.style.display = 'block';
 };
 
-projectArr[5].onclick = function popUpWindow4() {
+constArr[5].onclick = function popUpAppearbl4() {
   popUpmenu.style.display = 'block';
 };
 
-projectArr[6].onclick = function popUpWindow5() {
+constArr[6].onclick = function popUpAppearbl5() {
   popUpmenu.style.display = 'block';
 };
 
-projectArr[7].onclick = function popUpWindow6() {
+constArr[7].onclick = function popUpAppearbl6() {
   popUpmenu.style.display = 'block';
 };
 
-// desktop popup //
+const mainpopupBlockDesk = document.createElement('div');
+mainpopupBlockDesk.id = 'popupDivDeskmain';
+mainpopupBlockDesk.className = 'popupBlocDeskmain';
 
-const popupBlockDesktop = document.createElement('div');
-popupBlockDesktop.id = 'popupDivDesktop';
-popupBlockDesktop.className = 'popupBlocDesktop';
-document.body.appendChild(popupBlockDesktop);
+const popupBlockDesk = document.createElement('div');
+popupBlockDesk.id = 'popupDivDesk';
+popupBlockDesk.className = 'popupBlocDesk';
+mainpopupBlockDesk.appendChild(popupBlockDesk);
+
+const popsBlockDesk = document.createElement('div');
+popsBlockDesk.id = 'popsDivDesk';
+popsBlockDesk.className = 'popsBlocDesk';
+popupBlockDesk.appendChild(popsBlockDesk);
+
+const titleDesk = document.createElement('h3');
+titleDesk.id = 'titlePopDesk';
+titleDesk.className = 'titlepopDesk';
+titleDesk.textContent = 'Keeping track of hundreds  of components website';
+popsBlockDesk.appendChild(titleDesk);
+
+const closeTitleDesk = document.createElement('img');
+closeTitleDesk.id = 'closetitlePops';
+closeTitleDesk.className = 'closetitlepop';
+closeTitleDesk.src = 'Pictures/close.svg';
+popsBlockDesk.appendChild(closeTitleDesk);
+
+const unorderedlistDesk = document.createElement('ul');
+unorderedlistDesk.id = 'listlangDesk';
+unorderedlistDesk.className = 'langlistDesk';
+popupBlockDesk.appendChild(unorderedlistDesk);
+
+const listitemDesk = document.createElement('li');
+listitemDesk.textContent = 'html';
+listitemDesk.className = 'lang-list-Desk-item listhtDesk';
+
+const listitem1Desk = document.createElement('li');
+listitem1Desk.textContent = 'Bootstrap';
+listitem1Desk.className = 'lang-list-Desk-item listboDesk';
+
+const listitem2Desk = document.createElement('li');
+listitem2Desk.textContent = 'Ruby on rails';
+listitem2Desk.className = 'lang-list-Desk-item listruDesk';
 
 const blockDesk = document.createElement('div');
-blockDesk.id = 'blockDesktop';
-blockDesk.className = 'blockDesktop';
-popupBlockDesktop.appendChild(blockDesk);
+blockDesk.id = 'deskmainid';
+blockDesk.className = 'deskmain';
+popupBlockDesk.appendChild(blockDesk);
 
-const textImageBlock = document.createElement('div');
-textImageBlock.id = 'textImage';
-textImageBlock.className = 'textImageclas';
-blockDesk.appendChild(textImageBlock);
+const popPictureDesk = document.createElement('img');
+popPictureDesk.src = 'Pictures/Snapshoot-desktop.png';
+popPictureDesk.className = 'deskmainimage';
 
-const textTitleDesktop = document.createElement('h3');
-textTitleDesktop.id = 'textTitleDesk';
-textTitleDesktop.className = 'textTitleDeskclas';
-textTitleDesktop.textContent = 'Keeping track of hundreds  of components website';
-textImageBlock.appendChild(textTitleDesktop);
-
-const closePopupWindow = document.createElement('img');
-closePopupWindow.id = 'closePopup';
-closePopupWindow.className = 'closePopupclas';
-closePopupWindow.src = 'image/close.svg';
-textImageBlock.appendChild(closePopupWindow);
-
-const listDesktop = document.createElement('ul');
-listDesktop.id = 'listDesktop';
-listDesktop.className = 'listDesktop';
-blockDesk.appendChild(listDesktop);
-
-const itemUlDesktop = document.createElement('li');
-itemUlDesktop.textContent = 'html';
-itemUlDesktop.className = 'itemDesktop listOneDesk';
-listDesktop.appendChild(itemUlDesktop);
-
-const secondUlDesktop = document.createElement('li');
-secondUlDesktop.textContent = 'Bootstrap';
-secondUlDesktop.className = 'itemDesktop listwoDesk';
-listDesktop.appendChild(secondUlDesktop);
-
-const thirdUlDesktop = document.createElement('li');
-thirdUlDesktop.textContent = 'Ruby on rails';
-thirdUlDesktop.className = 'itemDesktop listhreeDesk';
-listDesktop.appendChild(thirdUlDesktop);
-
-const imageBlockDesktop = document.createElement('div');
-imageBlockDesktop.id = 'desktopimageid';
-imageBlockDesktop.className = 'desktopimageclas';
-blockDesk.appendChild(imageBlockDesktop);
-
-const pictureScreen = document.createElement('img');
-pictureScreen.src = 'image/Snapshoot.png';
-pictureScreen.className = 'pictureScreenclass';
-imageBlockDesktop.appendChild(pictureScreen);
-
-const textsBlockDesktop = document.createElement('div');
-textsBlockDesktop.className = 'textsBlockDeskclas';
-imageBlockDesktop.appendChild(textsBlockDesktop);
+const blockTextDesk = document.createElement('div');
+blockTextDesk.className = 'deskmaindiv';
 
 const popUpTextDesk = document.createElement('p');
-popUpTextDesk.className = 'deskmaintext';
+blockTextDesk.className = 'deskmaintext';
 popUpTextDesk.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.";
-textsBlockDesktop.appendChild(popUpTextDesk);
 
-const buttonDesktop = document.createElement('div');
-buttonDesktop.id = 'buttonDesktop';
-buttonDesktop.className = 'buttonDesktopclas';
-textsBlockDesktop.appendChild(buttonDesktop);
+const buttonBlockDesk = document.createElement('div');
+buttonBlockDesk.id = 'buttonDivDesk';
+buttonBlockDesk.className = 'buttonBlocDesk';
 
-const buttonOneDesk = document.createElement('button');
-buttonOneDesk.id = 'buttonOneDeskid';
-buttonOneDesk.className = 'buttonOneDeskclas';
-buttonOneDesk.textContent = 'See Live';
-buttonDesktop.appendChild(buttonOneDesk);
+const buttonFirstDesk = document.createElement('button');
+buttonFirstDesk.id = 'buttonPopDesk';
+buttonFirstDesk.className = 'buttonpopDesk';
+buttonFirstDesk.src = 'Pictures/popup-pic.png';
+buttonFirstDesk.textContent = 'See Live';
 
-const buttonimgageDesktop = document.createElement('img');
-buttonimgageDesktop.src = 'image/arrow.svg';
-buttonimgageDesktop.className = 'imageDesktopbtn';
-buttonOneDesk.appendChild(buttonimgageDesktop);
+const buttonimgDesk = document.createElement('img');
+buttonimgDesk.src = 'Pictures/arrow.svg';
+buttonimgDesk.className = 'imageDeskbutton1';
 
-const buttonTwoDesk = document.createElement('button');
-buttonTwoDesk.id = 'buttonTwoDeskid';
-buttonTwoDesk.className = 'buttonTwoDeskclas';
-buttonTwoDesk.textContent = 'See Source';
-buttonDesktop.appendChild(buttonTwoDesk);
+const buttonSecondDesk = document.createElement('button');
+buttonSecondDesk.id = 'buttonPopsecondDesk';
+buttonSecondDesk.className = 'buttonpopsecondDesk';
+buttonSecondDesk.src = 'Pictures/popup-pic.png';
+buttonSecondDesk.textContent = 'See Source';
 
-const buttonimgTwoDesk = document.createElement('img');
-buttonimgTwoDesk.src = 'image/githubpopup.svg';
-buttonimgTwoDesk.className = 'imageDeskbutton';
-buttonTwoDesk.appendChild(buttonimgTwoDesk);
+const buttonimgsecDesk = document.createElement('img');
+buttonimgsecDesk.src = 'Pictures/githubpopup.svg';
+buttonimgsecDesk.className = 'imageDeskbutton';
 
-const arrayDesktop = [];
-arrayDesktop.push(popupBlockDesktop);
-arrayDesktop.push(blockDesk);
-arrayDesktop.push(textImageBlock);
-arrayDesktop.push(listDesktop);
-arrayDesktop.push(imageBlockDesktop);
-arrayDesktop.push(textsBlockDesktop);
-arrayDesktop.push(buttonDesktop);
+document.body.appendChild(mainpopupBlockDesk);
+unorderedlistDesk.appendChild(listitemDesk);
+unorderedlistDesk.appendChild(listitem1Desk);
+unorderedlistDesk.appendChild(listitem2Desk);
+blockDesk.appendChild(popPictureDesk);
+blockDesk.appendChild(blockTextDesk);
+blockTextDesk.appendChild(popUpTextDesk);
+blockTextDesk.appendChild(buttonBlockDesk);
+buttonBlockDesk.appendChild(buttonFirstDesk);
+buttonFirstDesk.appendChild(buttonimgDesk);
+buttonBlockDesk.appendChild(buttonSecondDesk);
+buttonSecondDesk.appendChild(buttonimgsecDesk);
 
-const popUpImagArrDesk = [];
-popUpImagArrDesk.push(closePopupWindow);
-popUpImagArrDesk.push(pictureScreen);
-popUpImagArrDesk.push(buttonimgageDesktop);
-popUpImagArrDesk.push(buttonimgTwoDesk);
+const popUpArrayDesk = [];
+popUpArrayDesk.push(mainpopupBlockDesk);
+popUpArrayDesk.push(popupBlockDesk);
+popUpArrayDesk.push(popsBlockDesk);
+popUpArrayDesk.push(unorderedlistDesk);
+popUpArrayDesk.push(listitemDesk);
+popUpArrayDesk.push(listitem1Desk);
+popUpArrayDesk.push(listitem2Desk);
+popUpArrayDesk.push(blockDesk);
+popUpArrayDesk.push(blockTextDesk);
+popUpArrayDesk.push(buttonBlockDesk);
 
-const arrayDesktopButton = [];
-arrayDesktopButton.push(buttonOneDesk);
-arrayDesktopButton.push(buttonTwoDesk);
+const popUpSecondArrDesk = [];
+popUpSecondArrDesk.push(closeTitleDesk);
+popUpSecondArrDesk.push(popPictureDesk);
+popUpSecondArrDesk.push(buttonimgDesk);
+popUpSecondArrDesk.push(buttonimgsecDesk);
 
-arrayDesktopButton[0].onclick = function redirectionLive() {
+const arrayButtonDesk = [];
+arrayButtonDesk.push(buttonFirstDesk);
+arrayButtonDesk.push(buttonSecondDesk);
+
+arrayButtonDesk[0].onclick = function redirectionLive() {
   window.location.href = 'https://aeon9300.github.io/Portfolio-setup/';
 };
 
-arrayDesktopButton[1].onclick = function redirection() {
+arrayButtonDesk[1].onclick = function redirection() {
   window.location.href = 'https://github.com/aeon9300/Portfolio-setup';
 };
 
-const textArrDesktop = [];
-textArrDesktop.push(textTitleDesktop);
-textArrDesktop.push(popUpTextDesk);
+const textArrDesk = [];
+textArrDesk.push(titleDesk);
+textArrDesk.push(popUpTextDesk);
 
-popUpWindowObject.htmlcontainers = arrayDesktop;
-popUpWindowObject.desktopimage = popUpImagArrDesk;
-popUpWindowObject.desktopbutton = arrayDesktopButton;
-popUpWindowObject.desktoptext = textArrDesktop;
+popUpObject.htmlcontainers = popUpArrayDesk;
+popUpObject.imagesDesk = popUpSecondArrDesk;
+popUpObject.buttonDesk = arrayButtonDesk;
+popUpObject.TextDesk = textArrDesk;
 
-const popUpmenuDesk = document.getElementById('popupid');
-const buttonTagDesk = document.getElementById('projects1');
-const projectLinkDesk1 = document.getElementById('projects2');
-const projectLinkDesk2 = document.getElementById('projects3');
-const projectLinkDesk3 = document.getElementById('projects4');
-const projectLinkDesk4 = document.getElementById('projects5');
-const projectLinkDesk5 = document.getElementById('projects6');
-const projectLinkDesk6 = document.getElementById('projects7');
+const popUpmenuDesk = document.getElementById('popupDivDeskmain');
+const buttonTagDesk = document.getElementById('projectDesk');
+const anchorTagDesk = document.getElementById('anchor');
 
-const projectDeskArr = [];
-projectDeskArr.push(popUpmenuDesk);
-projectDeskArr.push(buttonTagDesk);
-projectDeskArr.push(projectLinkDesk1);
-projectDeskArr.push(projectLinkDesk2);
-projectDeskArr.push(projectLinkDesk3);
-projectDeskArr.push(projectLinkDesk4);
-projectDeskArr.push(projectLinkDesk5);
-projectDeskArr.push(projectLinkDesk6);
+const dataArr = [];
+dataArr.push(buttonTagDesk);
+dataArr.push(anchorTagDesk);
+dataArr.push(popUpmenuDesk);
 
-document.querySelector('.closePopupclas').addEventListener('click', () => {
-  document.querySelector('.popupBlocDesktop').style.display = 'none';
+document.querySelector('#closetitlePops').addEventListener('click', () => {
+  document.querySelector('.popupBlocDeskmain').style.display = 'none';
 });
 
-projectDeskArr[1].onclick = function popUpWindowDesk() {
+dataArr[0].onclick = function popDeskAppear() {
   popUpmenuDesk.style.display = 'block';
 };
 
-projectDeskArr[2].onclick = function popUpWindowDesk1() {
-  popUpmenuDesk.style.display = 'block';
-};
-
-projectDeskArr[3].onclick = function popUpWindowDesk2() {
-  popUpmenuDesk.style.display = 'block';
-};
-
-projectDeskArr[4].onclick = function popUpWindowDesk3() {
-  popUpmenuDesk.style.display = 'block';
-};
-
-projectDeskArr[5].onclick = function popUpWindowDesk4() {
-  popUpmenuDesk.style.display = 'block';
-};
-
-projectDeskArr[6].onclick = function popUpWindowDesk5() {
-  popUpmenuDesk.style.display = 'block';
-};
-
-projectDeskArr[7].onclick = function popUpWindowDesk6() {
+dataArr[1].onclick = function popDeskAppear1() {
   popUpmenuDesk.style.display = 'block';
 };
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 902) {
-    document.querySelector('.popupclass').style.display = 'none';
-    document.querySelector('.popupBlocDesktop').style.width = '100%';
+    document.querySelector('.mainpopupBloc').style.display = 'none';
+    document.querySelector('.popupBlocDeskmain').style.width = '100%';
   }
 });
